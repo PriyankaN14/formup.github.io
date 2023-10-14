@@ -1,112 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Form2</title>
-    <style>
-        button:hover{
-            background-color: bisque;
-            font-family: Georgia, 'Times New Roman', Times, serif;
+    <title>Standard form</title>
+
+    <style >
+        #one:hover{
+            background-color: brown;
+        }
+        body{
+            background-color :powderblue ;
         }
         fieldset{
-            color: goldenrod;
-            border: 2px solid blue;
+            color:rgb(140, 3, 3);
+            background-color: cornsilk;
+            border: 2xp solid yellow;
+            border-radius: 5%;
+            width: 40%;
+
         }
-    </style>
-   
-</head>
-<body >
-    <form action="message.html">
 
-        <fieldset >
-            <legend><h2 style="color: palevioletred;">Personal Details</h2></legend>
-            <label for="sal">salutation</label>
-            <br><br>
-            <select name="sal" id="sal">
-                
-                <option value="--None--">--None--</option>
-                <option value="Mr.">Mr.</option>
-                <option value="Mrs.">Mrs.</option>
-                <option value="Dr.">Dr.</option>
+    </style>   
+    </head>
     
-            </select>    
+<body>
+    <center>
+    <form action="message1.html">
+        <fieldset style="text-align: left;" > 
+            <legend style="color: black;"><h1 >Personal Details</h1></legend>
+
+            <label for="Sal">Salutation</label>
+            &nbsp;  &nbsp;
+
+        <br><br>
+        <select name="Sal" id="Sal">
+            <option value="--None--.">--None--.</option>
+
+            <option value="Mr.">Mr.</option>
+            <option value="Mrs.">Mrs.</option>
+
+        </select>
+
+        <br><br>
+
+        <label for="fname">First Name </label>
+        &nbsp; &nbsp;
+
+
+        <input type="text" id="fname"  name="fname" pattern="[A-Z a-z]{3,10}">
+        
+         <br><br>
+
+        <label for="mname">Middle Name</label>
+        &nbsp;
+
+
+        <input type="text" id="mname"  name="mname" >
+        <br><br>
+
+
+        <label for="Lname">Last Name</label>
+        &nbsp; &nbsp;  &nbsp;
+
+
+        <input type="text" id="Lname"  name="Lname">
+        <br><br>
+
+
+
+        <label for="email">Email</label>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+      <input type="email" id="email"  name="email" >
+      <br><br>
+      <label for="dob">DOB</label>
+        &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+        <input type="date" id="dob"  name="dob">
+        </fieldset>
+         
+
+             
+        <fieldset style="text-align: left;" >
+            
+            <legend style="color: black;" ><h1 >Educational Details</h1></legend>
+            <label for="">Department</label>
             <br><br>
 
-        <label for="1">First Name</label>
-        &nbsp;  &nbsp; 
-        <input type="text" id="1" name="fname">
-        <br><br>
+            <input type="radio" id="CS" name="dept">
+            <label for="cs">CS</label>
 
-        <label for="2">Middle Name</label>
-        <input type="text" id="2" name="mname">
-        <br><br>
+            <input type="radio" id="EC" name="dept">
+            <label for="Ec">EC</label>
 
-        <label for="3">Last Name</label>
-        &nbsp;  &nbsp; 
-        <input type="text" id="3" name="lname">
-        <br><br>
+            <input type="radio" id="civil" name="dept">
+            <label for="civil">CIVIL</label>
+            <br><br>
 
-        <label for="contact">contact</label>
-        &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp;
-        <input type="text" required id="contact" name="contact" pattern="[6-9]{1}[0-9]{9}">
-        <br><br>
+            <label for="yop">YOG</label>
+            <input list="yog" id="yop" name="yop">
+            <datalist id="yog">
+                <option >2018</option>
+                <option >2019</option>
+                <option >2020</option>
+                <option >2021</option>
+                <option >2022</option>
+                <option >2023</option>
 
-        <label for="4">Email</label>
-        &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  
-        <input type="email" id="4" name="email">
-        <br><br>
+                </datalist>
+                <br><br>
 
-        <label for="5">DOB</label>
-        &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
-        <input type="date" id="5" name="dob">
-    </fieldset>
+                <label for="">Skills</label>
+                <br><br>
+                <input type="checkbox" id="Html" name="skill">
+                <label for="html">HTML</label>
+                <br><br>
 
-    <fieldset>
-        <legend><h2 style="color: palevioletred;">Educational Details</h2></Details></legend>
 
-        <label for="">Department</label>
-        <br><br>
+                <input type="checkbox" id="Css" name="skill">
+                <label for="css">CSS</label>
+                <br><br>
 
-        <input type="radio" id="cs" name="dept">
-        <label for="cs">cs</label>
 
-        <input type="radio" id="civil" name="dept">
-        <label for="civil">civil</label>
-
-        <input type="radio" id="ec" name="dept">
-        <label for="ec">ec</label>
-        <br><br>
-
-        <label for="yop">YOG</label>
-        <input list="yog" id="yop" name="yop">
-        <datalist id="yog">
-            <option>2018</option>
-            <option>2019</option>
-            <option>2020</option>
-            <option>2021</option>
-            <option>2022</option>
-            <option>2023</option>
-        </datalist>
-        <br><br>
-
-        <label for="">Skills</label>
-        <br><br>
-
-        <input type="radio" id="html" >
-        <label for="html">HTML</label>
-        <br><br>
-
-        <input type="radio" id="css">
-        <label for="css">CSS</label>
-        <br><br>
-
-        <input type="radio" id="js" >
-        <label for="js">JAVA SCRIPT</label>
-        <br><br>
-    </fieldset>
-    <br><br>
-
-    <button>submit</button>
-
-    </form>
+                <input type="checkbox" id="Java" name="skill">
+                <label for="java">JAVA</label>
+            
+ </fieldset>
+    
+        <input type="submit" id="one">
+ </form>
+</center>
 </body>
+
 </html>
